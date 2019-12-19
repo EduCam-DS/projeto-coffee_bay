@@ -5,6 +5,12 @@ body{
     background-color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+  /* HEADER*/
+
 .header-logo{
     width: 130px;
 }
@@ -17,12 +23,16 @@ body{
     font-size: 1rem;
 }
 
+  /* INDEX */
+
 .index-card{
     background-color: #212121;
+    width: 11.3rem;
 }
 
-.index-img-card{
-    width: 180px;
+.index-img-card :hover{
+    transform: scale(1.0);
+    width: 11.3rem;
 }
 
 h5{
@@ -37,6 +47,53 @@ p{
     color: grey;
 }
 
+.index-hover :hover{
+    transform: scale(1.01);
+  }
+  
+.index-nhover :hover{
+      transform: scale(1.0);
+  }
+
+    /* FOOTER */
+
 .footer-logo{
-    width: 80px;
+    width: 6rem;
+}
+
+footer{
+    background-color: black;
+}
+
+.footer-subtitulo{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.footer-listas{
+    list-style: none;
+    font-size: 0.9rem;
+    color: black;
+    padding: 0;
+}
+
+a.footer-link{
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover.footer-link{
+    text-decoration: none;
+    color: black;
+}
+
+a.icone-rede-social{
+    font-size: 40px;
+    color: #424242;
+    padding: 0 5px;
+}
+
+a:hover.icone-rede-social{
+    font-size: 40px;
+    color: black;
 }

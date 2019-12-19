@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="container-fluid px-0 ">
+  <header class="container-fluid px-0 fixed-top">
     <nav class=" navbar navbar-expand-lg color-nav-bar navbar-dark row justify-content-around pt-0 m-0">
       <a class="navbar-brand col-auto m-0 p-0" href="#">
         <img class="header-logo" src="img/logo/Coffee-logo-white.png" alt="logo-cafe bay">

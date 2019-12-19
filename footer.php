@@ -1,9 +1,11 @@
-<footer class="container-fluid border-top">
+<br>
+<br>
+<footer class="container-fluid border-top m-0 p-0">
     <div class="container-fluid">
         <div class="row">
             <div class="col logotipo d-flex justify-content-center">
                 <a href="index.php">
-                    <img src="img/logo/Coffee-logo-white.png" alt="logotipo">
+                    <img class="footer-logo" src="img/logo/Coffee-logo-white.png" alt="logotipo">
                 </a>
             </div>
             <div class="col sobre">
@@ -12,9 +14,9 @@
                     <li>
                         <a href="sobrenos.php" class="footer-link">Sobre o Coffee Bay</a>
                     </li>
-                    <!-- <li>
+                    <li>
                             <a href="#" class="footer-link">Sobre o Wimart Studio</a>
-                        </li> -->
+                        </li>
                     <li>
                         <a href="#" class="footer-link">Trabalhe conosco</a>
                     </li>
