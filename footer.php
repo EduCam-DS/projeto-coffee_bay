@@ -15,9 +15,6 @@
                         <a href="sobrenos.php" class="footer-link">Sobre o Coffee Bay</a>
                     </li>
                     <li>
-                            <a href="#" class="footer-link">Sobre o Wimart Studio</a>
-                        </li>
-                    <li>
                         <a href="#" class="footer-link">Trabalhe conosco</a>
                     </li>
                     <li>
