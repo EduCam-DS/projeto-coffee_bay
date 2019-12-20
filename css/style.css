@@ -67,33 +67,22 @@ footer{
 
 .footer-subtitulo{
     font-size: 1.2rem;
-    color: black;
+    color:white;
 }
 
 .footer-listas{
     list-style: none;
     font-size: 0.9rem;
-    color: black;
+    color: grey;
     padding: 0;
 }
 
 a.footer-link{
     text-decoration: none;
-    color: grey;
+    color: gray;
 }
 
 a:hover.footer-link{
     text-decoration: none;
-    color: black;
-}
-
-a.icone-rede-social{
-    font-size: 40px;
-    color: #424242;
-    padding: 0 5px;
-}
-
-a:hover.icone-rede-social{
-    font-size: 40px;
-    color: black;
+    color: white;
 }

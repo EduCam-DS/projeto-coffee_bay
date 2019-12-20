@@ -1,8 +1,8 @@
 <br>
 <br>
-<footer class="container-fluid border-top m-0 p-0">
-    <div class="container-fluid">
-        <div class="row">
+<footer>
+    <div class="container-fluid border-top m-0 p-0">
+        <div class="row col-lg-12 mt-3">
             <div class="col logotipo d-flex justify-content-center">
                 <a href="index.php">
                     <img class="footer-logo" src="img/logo/Coffee-logo-white.png" alt="logotipo">
@@ -32,13 +32,6 @@
                         <a href="faq.php" class="footer-link">FAQ</a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-md-4 redes-sociais">
-                <h3 class="footer-subtitulo">Siga o Coffee Bay</h3>
-                <a href="#" class="icone-rede-social"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="icone-rede-social"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icone-rede-social"><i class="fab fa-twitter-square"></i></a>
-                <a href="#" class="icone-rede-social"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </div>
