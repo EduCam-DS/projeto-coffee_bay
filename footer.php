@@ -3,12 +3,13 @@
 <footer>
     <div class="container-fluid border-top m-0 p-0">
         <div class="row col-lg-12 mt-3">
-            <div class="col logotipo d-flex justify-content-center">
+            <div class="col-lg-3 col-3 logotipo d-flex justify-content-end">
                 <a href="index.php">
                     <img class="footer-logo" src="img/logo/Coffee-logo-white.png" alt="logotipo">
                 </a>
             </div>
-            <div class="col sobre">
+            <div class="col-lg-3 col-0"></div>
+            <div class="col-lg-3 col-auto sobre">
                 <h3 class="footer-subtitulo">Sobre</h3>
                 <ul class="footer-listas">
                     <li>
@@ -22,7 +23,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col suporte">
+            <div class="col-lg-3 col-auto suporte">
                 <h3 class="footer-subtitulo">Suporte</h3>
                 <ul class="footer-listas">
                     <li>
@@ -36,9 +37,6 @@
         </div>
     </div>
 </footer>
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

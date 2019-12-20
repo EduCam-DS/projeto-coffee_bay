@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap');
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: black;
 }
 
@@ -9,80 +9,112 @@ html {
     scroll-behavior: smooth;
 }
 
-  /* HEADER*/
+/* HEADER*/
 
-.header-logo{
+.header-logo {
     width: 130px;
 }
 
-.header-icon{
+.header-icon {
     width: 45px;
 }
 
-.header-text{
+.header-text {
     font-size: 1rem;
 }
 
-  /* INDEX */
+/* INDEX */
 
-.index-card{
+.index-card {
     background-color: #212121;
     width: 11.3rem;
 }
 
-.index-img-card :hover{
+.index-img-card :hover {
     transform: scale(1.0);
     width: 11.3rem;
 }
 
-h5{
+.index-titulo-produto {
     font-size: 1.1rem;
     text-align: center;
     color: white;
 }
 
-p{
+p {
     font-size: 0.6rem;
     text-align: center;
     color: grey;
 }
 
-.index-hover :hover{
+.index-hover :hover {
     transform: scale(1.01);
-  }
-  
-.index-nhover :hover{
-      transform: scale(1.0);
-  }
+}
 
-    /* FOOTER */
+.index-nhover :hover {
+    transform: scale(1.0);
+}
 
-.footer-logo{
+/* FOOTER */
+
+.footer-logo {
     width: 6rem;
 }
 
-footer{
+footer {
     background-color: black;
 }
 
-.footer-subtitulo{
+.footer-subtitulo {
     font-size: 1.2rem;
-    color:white;
+    color: white;
 }
 
-.footer-listas{
+.footer-listas {
     list-style: none;
     font-size: 0.9rem;
     color: grey;
     padding: 0;
 }
 
-a.footer-link{
+a.footer-link {
     text-decoration: none;
     color: gray;
 }
 
-a:hover.footer-link{
+a:hover.footer-link {
     text-decoration: none;
     color: white;
+}
+
+/* MODAL LOGIN */
+
+.modal-title {
+    text-align: center;
+}
+
+.modal-text-form {
+    text-align: left;
+}
+
+a.modal-text:link {
+    text-decoration: none;
+}
+
+.modal-text {
+    color: black;
+    font-weight: bold;
+}
+
+.modal-text :hover {
+    color: red;
+}
+
+.modal-logo {
+    width: 6rem;
+}
+
+.modal-text1 {
+    font-weight: lighter;
+    color: #424242;
 }

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -15,7 +16,10 @@
 </head>
 
 <body>
-  <header class="container-fluid px-0 fixed-top">
+
+  <?php require_once('modal-login.php'); ?>
+
+  <header class="container-fluid fixed-top">
     <nav class=" navbar navbar-expand-lg color-nav-bar navbar-dark row justify-content-around pt-0 m-0">
       <a class="navbar-brand col-auto m-0 p-0" href="#">
         <img class="header-logo" src="img/logo/Coffee-logo-white.png" alt="logo-cafe bay">
@@ -25,22 +29,20 @@
         <span class="color-nav-span navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse row col-lg-8 justify-content-end" id="navbarNav">
-          <button type="button" class="btn btn-outline-light col-lg-auto col-12">
-              <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
-                <img class="header-icon col-lg-auto pl-0" src="img/Icons/user.svg">
-                <h2 class="header-text col-lg-auto col-10 pl-0 mb-0">ACESSE OU CRIE SUA CONTA</h2>
-              </div>
-            </button>
-          <div class="col-lg-auto col-12 py-1"></div>
-          <button type="button" class="btn btn-outline-light col-lg-auto col-12">
-            <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
-              <img class="header-icon col-lg-auto col-auto pl-0" src="img/Icons/shopping-cart.svg">
-              <h2 class="header-text col-lg-auto col-10 pl-0 mb-0">SEU CARRINHO</h2>
-            </div>
-          </button>
+        <button type="button" class="btn btn-outline-light col-lg-auto col-12" data-toggle="modal"
+          data-target="#modal-login">
+          <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
+            <img class="header-icon col-lg-auto pl-0" src="img/Icons/user.svg">
+            <h2 class="header-text col-lg-auto col-10 pl-0 mb-0">ACESSE OU CRIE SUA CONTA</h2>
+          </div>
+        </button>
+        <div class="col-lg-auto col-12 py-1"></div>
+        <button type="button" class="btn btn-outline-light col-lg-auto col-12">
+          <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
+            <img class="header-icon col-lg-auto col-auto pl-0" src="img/Icons/shopping-cart.svg">
+            <h2 class="header-text col-lg-auto col-10 pl-0 mb-0">SEU CARRINHO</h2>
+          </div>
+        </button>
       </div>
     </nav>
   </header>
-
-
-  
