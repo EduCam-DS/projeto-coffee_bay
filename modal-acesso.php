@@ -1,6 +1,5 @@
-<?php require_once('modal-acesso.php'); ?>
 
-<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+<div class="modal fade" id="Modal-acesso" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -29,7 +28,7 @@
           </form>
       </div>
       <div class="row justify-content-center">
-        <h6 class="col-auto modal-text"><a href="index.php" data-dismiss="modal" class="modal-text" data-target="#Modal-acesso" data-toggle="modal">Esqueçeu o email ou a senha?</a></h6>
+        <h6 class="col-auto modal-text"><a href="index.php" class="modal-text" data-target="#Modal-acesso" data-toggle="modal">Esqueçeu o email ou a senha?</a></h6>
       </div>
       <hr class="col-12">
       <div class="row justify-content-center align-items-center">
