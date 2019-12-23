@@ -1,11 +1,12 @@
-<?php require_once('modal-acesso.php'); ?>
+<?php require_once('modal-acesso.php');
+      require_once('modal-membro.php'); ?>
 
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title col-11 modal-title">Acesse o Coffee Bay</h5>
+        <h5 class="modal-title col-11">Acesse o Coffee Bay</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -25,17 +26,19 @@
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
             </div>
-            <button type="submit" class="btn btn-danger col-12">ENTRAR</button>
+            <button type="submit" class="btn btn-warning col-12">ACESSAR</button>
           </form>
       </div>
       <div class="row justify-content-center">
-        <h6 class="col-auto modal-text"><a href="index.php" data-dismiss="modal" class="modal-text" data-target="#Modal-acesso" data-toggle="modal">Esqueçeu o email ou a senha?</a></h6>
+        <h6 class="col-auto modal-text"><a href="" data-dismiss="modal" class="modal-text" data-target="#Modal-acesso"
+            data-toggle="modal">Esqueçeu o email ou a senha?</a></h6>
       </div>
       <hr class="col-12">
       <div class="row justify-content-center align-items-center">
-        <img class="col-auto modal-logo pb-3 pl-1 pr-1" src="img/logo/coffee-logo.png" alt="logo">
+        <a href="index.php"><img class="col-auto modal-logo pb-3 pl-1 pr-1" src="img/logo/coffee-logo.png" alt="logo"></a>
         <h6 class="col-auto pb-3 mb-0 pl-0 pr-1 modal-text1">Ainda não é membro Coffee Bay?</h6>
-        <h6 class="modal-text col-auto pb-3 pl-0 mb-0"><a href="cadastro.php" class="modal-text">Clique aqui!</a></h6>
+        <h6 class="modal-text col-auto pb-3 pl-0 mb-0"><a href="#" class="modal-text" data-dismiss="modal"
+            data-target="#Modal-membro" data-toggle="modal">Clique aqui!</a></h6>
       </div>
       </section>
     </div>
