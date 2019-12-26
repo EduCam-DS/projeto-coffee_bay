@@ -14,7 +14,7 @@
             </div>
             <div class="modal-body">
                 <section class="container row justify-content-center p-0 m-0">
-                    <form class="col-10">
+                    <form class="col-12 col-sm-10">
                         <div class="form-group">
                             <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputEmail1">Nome</label>
                             <input type="text" class="form-control col-12" id="exampleInputEmail1"

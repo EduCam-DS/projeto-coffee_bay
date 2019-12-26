@@ -10,7 +10,7 @@
             </div>
             <div class="modal-body">
                 <section class="container row justify-content-center p-0 m-0">
-                    <form class="col-10">
+                    <form class="col-12 col-sm-10">
                         <div class="form-group">
                             <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputEmail1">Email de
                                 Cadastro</label>
@@ -35,13 +35,14 @@
                         <button type="submit" class="btn btn-danger col-12">REDEFINIR</button>
                     </form>
             </div>
-            <hr class="col-12">
+            <hr class="col-12 my-0 py-0">
             <div class="row justify-content-center align-items-center">
-                <a href="index.php"><img class="col-auto modal-logo pb-3 pl-1 pr-1" src="img/logo/coffee-logo.png"
+                <a href="index.php"><img class="col-auto modal-logo pl-1 pr-1" src="img/logo/coffee-logo.png"
                         alt="logo"></a>
-                <h6 class="col-auto pb-3 mb-0 pl-0 pr-1 modal-text1">Ainda não é membro Coffee Bay?</h6>
-                <h6 class="modal-text col-auto pb-3 pl-0 mb-0"><a href="#" class="modal-text" data-dismiss="modal"
-                        data-target="#Modal-membro" data-toggle="modal">Clique aqui!</a></h6>
+                <h6 class="col-12 col-sm-auto modal-text1 text-center text-sm-left pr-sm-2">Ainda não é membro Coffee
+                    Bay?</h6>
+                <h6 class="modal-text col-12 col-sm-auto text-center pl-sm-0"><a href="#" class="modal-text text-center"
+                        data-dismiss="modal" data-target="#Modal-membro" data-toggle="modal">Clique aqui!</a></h6>
             </div>
             </section>
         </div>
