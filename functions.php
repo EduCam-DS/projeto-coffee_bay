@@ -1,3 +1,11 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <?php
 require_once('classes/CadastrarMembro.php');
 require_once('header.php');
