@@ -17,7 +17,13 @@
 
 <body>
 
-  <?php require_once('modal-login.php'); ?>
+  <?php 
+        require_once('modal-login.php'); 
+        require_once('modal-membro.php');
+        require_once('modal-acesso.php');
+        require_once('classes/CadastrarMembro.php');
+        require_once('functions.php');
+  ?>
   
    <header class="container-fluid px-0 mx-0 fixed-top"> 
     <nav class="px-0 mx-0 navbar navbar-expand-lg color-nav-bar navbar-dark row justify-content-around pt-0 m-0">

@@ -1,4 +1,4 @@
-<?php require('header.php'); ?>
+<?php require_once('header.php'); ?>
 
 <br>
 <br>
@@ -7,6 +7,11 @@
 <br>
 <br>
 <br>
+<?php
+   
+    echo isset($erroMembro) ? '<div class="alert alert-warning">'. $erroMembro .' <br> </div>' : "";
+    echo isset($teste) ? $teste->dados() : "";
+?>
 <section class="container-fluid row justify-content-center px-0 mx-0">
     <div class="index-hover row col-lg-9 col-xl-7 justify-content-center">
         <div class="index-nhover card index-card mr-1 mt-1" style="width: 10.0rem">

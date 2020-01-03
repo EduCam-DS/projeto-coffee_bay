@@ -1,3 +1,5 @@
+<?php require_once('header.php'); ?>
+
 <div class="modal fade" id="Modal-acesso" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

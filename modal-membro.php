@@ -1,5 +1,4 @@
-<?php require_once('classes/CadastrarMembro.php');
-?>
+<?php require_once('header.php');  ?>
 
 <div class="modal fade" id="Modal-membro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
@@ -17,7 +16,7 @@
             </div>
             <div class="modal-body">
                 <section class="container row justify-content-center p-0 m-0">
-                    <form class="col-12 col-sm-10" action="functions.php" method="post">
+                    <form class="col-12 col-sm-10" action="" method="post">
                         <div class="form-group">
                             <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputEmail1">Nome</label>
                             <input type="text" name="NomeMembro" class="form-control col-12" placeholder="Digite seu Nome">
