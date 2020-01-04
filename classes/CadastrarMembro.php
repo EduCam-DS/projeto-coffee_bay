@@ -7,53 +7,82 @@ class Membro
     private $nome;
     private $email;
     private $senha;
+    private $validaSenha;
 
-    public function __construct( $xNome, $xEmail, $xSenha)
+    public function __construct($xNome, $xEmail, $xSenha, $xValidaSenha, $xAdmin = FALSE)
     {
         $this->nome = $xNome;
         $this->email = $xEmail;
         $this->senha = $xSenha;
+        $this->validaSenha = $xValidaSenha;
+        $this->admin = $xAdmin;
+
+
+        $this->validarDados();
+        // $this->consultaMembro();
     }
 
-    public function dados()
+    public function validarDados()
     {
-        // global $erroMembro;
-        // global $teste;
+        global $erroMembro;
 
-        // if(isset($_POST['NomeMembro'])){
+            if (strlen($this->nome) == 0) {
+                $erroMembro = "Você tem que ter um nome!";
 
-            if (strlen($_POST['NomeMembro']) == 0 || strlen($_POST['NomeMembro']) > 20) {
-                $erroMembro = "Utilizar até 20 caracteres para o nome!";
-                return $erroMembro;
-                header("location: index.php");
-                // echo "<div class='alert alert-warning'> Utilizar até 10 caracteres para o nome!<br> </div>";
-            }else if (filter_var($_POST['EmailMembro'], FILTER_VALIDATE_EMAIL) == FALSE) {
+            }elseif (strlen($this->nome) > 20) {
+                $erroMembro = "Esse nome ai ficou muito grande!";
+
+            }elseif ($this->consultaMembro() == 1){
+                $erroMembro = "Esse membro já existe! Favor utilizar outro nome.";
+
+            }elseif (filter_var($this->email, FILTER_VALIDATE_EMAIL) == FALSE) {
                 $erroMembro = "Utilizar um formato de email valido!";
-                return $erroMembro;
-                header("location: index.php");
-                // echo "<div class='alert alert-warning'> Utilizar um email valido!<br> </div>";
-            }else if ($_POST['senha'] != $_POST['ValidaSenha']){
+
+            }elseif ($this->consultaMembro() == 2){
+                $erroMembro = "Esse email já foi utilizado! Favor utilizar outro email ou recuperar sua senha.";
+            
+            }elseif ($this->senha != $this->validaSenha){
                 $erroMembro = "As senhas digitadas não estão iguais!";
-                return $erroMembro;
-                header("location: index.php");
-                // echo "<div class='alert alert-warning'> As senhas digitadas não estão iguais!<br></div>";
+
             } else{
-                // $teste = new Membro($_POST['NomeMembro'],$_POST['EmailMembro'],$_POST['senha']);
-                $erroMembro = 'Parabéns '.$_POST['NomeMembro'].'! Agora você é um membro Coffee Bay!';
-                // header("location: index.php");
-                // echo "<div class='alert alert-warning'> Parabens! Agora você é um membro Coffee Bay!<br> </div>";
-                
+                $this->cadastrarMembro();
+                $erroMembro = 'Bem vindo '.$this->nome.', agora você é um membro Coffee Bay! Faça seu login';
             }
-        // }
     }
 
-    // public function dados()
-    // {   
-        // header("location: index.php");
-        // return var_dump ($this->nome, $this->email, $this->senha);
-        // return $teste3 = "<div class='alert alert-warning'> Parabens! Agora você é um membro Coffee Bay!<br> </div>";
-    // }
+    public function cadastrarMembro()
+    {
+        $json = file_get_contents('membros.json');
+        $jsonMembros = json_decode($json, true);
+        $jsonMembros[] = ['nome' => $this->nome, 'email' => $this->email, 'senha' => $this->senha, 'admin' => $this->admin];
+        $json = json_encode($jsonMembros);
+        file_put_contents('membros.json', $json);
+    }
+
+    public function consultaMembro()
+    {
+        $json = file_get_contents('membros.json');
+        $jsonMembros = json_decode($json, true);
+           
+        if (isset($jsonMembros[0]['nome'])){
+            foreach ($jsonMembros as $value){
+                if($this->nome == $value["nome"]){
+                    return 1;
+                }
+            }
+        }
+
+        if (isset($jsonMembros[0]['email'])){            
+            foreach ($jsonMembros as $value){
+                if($this->email == $value["email"]){
+                    return 2;
+                }
+            }
+        }
+    }
 }
+
+    
 
 
 ?>

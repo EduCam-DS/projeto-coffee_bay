@@ -32,7 +32,7 @@
                         <div class="form-group">
                             <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputPassword1">Confirme a
                                 Senha</label>
-                            <input type="password" name="ValidaSenha" class="form-control col-12" placeholder="Digite Novamente">
+                            <input type="password" name="validaSenha" class="form-control col-12" placeholder="Digite Novamente">
                         </div>
                         <button type="submit" name="button" class="btn btn-success col-12">INGRESSAR</button>
                     </form>
