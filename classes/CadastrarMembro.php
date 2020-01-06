@@ -1,7 +1,5 @@
 <?php
 
-require_once('header.php');
-
 class Membro
 {
     private $nome;
@@ -68,6 +66,7 @@ class Membro
             foreach ($jsonMembros as $value){
                 if($this->nome == $value["nome"]){
                     return 1;
+                    unset($jsonMembros);
                 }
             }
         }
@@ -76,6 +75,7 @@ class Membro
             foreach ($jsonMembros as $value){
                 if($this->email == $value["email"]){
                     return 2;
+                    unset($jsonMembros);
                 }
             }
         }

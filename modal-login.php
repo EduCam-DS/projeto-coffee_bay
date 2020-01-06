@@ -1,4 +1,6 @@
-<?php require_once('header.php'); ?>
+<?php 
+require_once('modal-acesso.php');
+require_once('modal-membro.php'); ?>
 
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
   aria-hidden="true">
@@ -12,20 +14,20 @@
       </div>
       <div class="modal-body">
         <section class="container row justify-content-center p-0 m-0">
-          <form class="col-12 col-sm-10">
+          <form class="col-12 col-sm-10" method="post">
             <div class="form-group">
               <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control col-12" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <input type="email" name="emailLogin" class="form-control col-12" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Seu email">
             </div>
             <div class="form-group">
               <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputPassword1">Senha</label>
-              <input type="password" class="form-control col-12" id="exampleInputPassword1" placeholder="Senha">
+              <input type="password" name="senhaLogin" class="form-control col-12" id="exampleInputPassword1" placeholder="Senha">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
             </div>
-            <button type="submit" class="btn btn-warning col-12">ACESSAR</button>
+            <button type="submit" nome="button" class="btn btn-warning col-12">ACESSAR</button>
           </form>
       </div>
       <div class="row justify-content-center">

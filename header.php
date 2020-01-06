@@ -19,13 +19,14 @@
 
   <?php 
         require_once('modal-login.php'); 
-        require_once('modal-membro.php');
-        require_once('modal-acesso.php');
-        require_once('classes/CadastrarMembro.php');
+        // require_once('modal-membro.php');
+        // require_once('modal-acesso.php');
+        // require_once('classes/CadastrarMembro.php');
+        // require_once('classes/SessionMembro.php');
         require_once('functions.php');
   ?>
   
-   <header class="container-fluid px-0 mx-0 fixed-top"> 
+   <header class="container-fluid px-0 mx-0"> 
     <nav class="px-0 mx-0 navbar navbar-expand-lg color-nav-bar navbar-dark row justify-content-around pt-0 m-0">
       <a class="navbar-brand col-auto m-0 p-0" href="index.php">
         <img class="header-logo" src="img/logo/Coffee-logo-white.png" alt="logo-cafe bay">

@@ -1,4 +1,5 @@
-<?php require_once('header.php'); ?>
+<?php 
+require_once('modal-membro.php'); ?>
 
 <div class="modal fade" id="Modal-acesso" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
     aria-hidden="true">
