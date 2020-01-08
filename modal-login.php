@@ -1,6 +1,8 @@
 <?php 
 require_once('modal-acesso.php');
-require_once('modal-membro.php'); ?>
+require_once('modal-membro.php'); 
+// require_once('functions.php');
+?>
 
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
   aria-hidden="true">
@@ -14,7 +16,7 @@ require_once('modal-membro.php'); ?>
       </div>
       <div class="modal-body">
         <section class="container row justify-content-center p-0 m-0">
-          <form class="col-12 col-sm-10" method="post">
+          <form class="col-12 col-sm-10" action="" method="post">
             <div class="form-group">
               <label class="col-12 modal-text-form px-0 mb-0" for="exampleInputEmail1">Email</label>
               <input type="email" name="emailLogin" class="form-control col-12" id="exampleInputEmail1" aria-describedby="emailHelp"

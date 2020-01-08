@@ -15,36 +15,35 @@ class Membro
         $this->validaSenha = $xValidaSenha;
         $this->admin = $xAdmin;
 
-
         $this->validarDados();
         // $this->consultaMembro();
     }
 
     public function validarDados()
     {
-        global $erroMembro;
+        global $retorno;
 
             if (strlen($this->nome) == 0) {
-                $erroMembro = "Você tem que ter um nome!";
+                $retorno = "Você tem que ter um nome!";
 
             }elseif (strlen($this->nome) > 20) {
-                $erroMembro = "Esse nome ai ficou muito grande!";
+                $retorno = "Esse nome ai ficou muito grande!";
 
             }elseif ($this->consultaMembro() == 1){
-                $erroMembro = "Esse membro já existe! Favor utilizar outro nome.";
+                $retorno = "Esse membro já existe! Favor utilizar outro nome.";
 
             }elseif (filter_var($this->email, FILTER_VALIDATE_EMAIL) == FALSE) {
-                $erroMembro = "Utilizar um formato de email valido!";
+                $retorno = "Utilizar um formato de email valido!";
 
             }elseif ($this->consultaMembro() == 2){
-                $erroMembro = "Esse email já foi utilizado! Favor utilizar outro email ou recuperar sua senha.";
+                $retorno = "Esse email já foi utilizado! Favor utilizar outro email ou recuperar sua senha.";
             
             }elseif ($this->senha != $this->validaSenha){
-                $erroMembro = "As senhas digitadas não estão iguais!";
+                $retorno = "As senhas digitadas não estão iguais!";
 
             } else{
                 $this->cadastrarMembro();
-                $erroMembro = 'Bem vindo '.$this->nome.', agora você é um membro Coffee Bay! Faça seu login';
+                $retorno = 'Bem vindo '.$this->nome.', agora você é um membro Coffee Bay! Faça seu login';
             }
     }
 

@@ -7,7 +7,7 @@
 <br>
 <br>
 <br>
-<?php echo isset($erroMembro) ? '<div class="alert alert-danger font-weight-bold">'. $erroMembro .' <br> </div>' : "";?>
+<?php echo isset($retorno) ? '<div class="alert alert-danger font-weight-bold">'. $retorno .' <br> </div>' : "";?>
 
 <section class="container-fluid row justify-content-center px-0 mx-0">
     <div class="index-hover row col-lg-9 col-xl-7 justify-content-center">

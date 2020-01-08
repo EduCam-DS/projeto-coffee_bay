@@ -23,7 +23,7 @@
         // require_once('modal-acesso.php');
         // require_once('classes/CadastrarMembro.php');
         // require_once('classes/SessionMembro.php');
-        require_once('functions.php');
+        // require_once('functions.php');
   ?>
   
    <header class="container-fluid px-0 mx-0"> 
@@ -40,7 +40,7 @@
           data-target="#modal-login">
           <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
             <img class="header-icon col-lg-auto pl-0" src="img/Icons/user.svg">
-            <h2 class="header-text col-lg-auto col-10 pl-0 mb-0">ACESSE OU CRIE SUA CONTA</h2>
+            <?php echo isset($logado) ? '<h2 class="header-text col-lg-auto col-10 pl-0 mb-0"> BEM VINDO </h2>' : '<h2 class="header-text col-lg-auto col-10 pl-0 mb-0"> ACESSE OU CRIE SUA CONTA </h2>'; ?>
           </div>
         </button>
         <div class="col-lg-auto col-12 py-1"></div>
