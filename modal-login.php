@@ -1,7 +1,7 @@
 <?php 
 require_once('modal-acesso.php');
-require_once('modal-membro.php'); 
-// require_once('functions.php');
+require_once('modal-membro.php');
+require_once('functions.php');
 ?>
 
 <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"

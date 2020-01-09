@@ -1,6 +1,13 @@
 <?php
 
-echo "teste";
+// require_once('classes/CadastrarMembro.php');
+// require_once('classes/SessionMembro.php');
+
+// new Session('eduardo.cam@outlook.com','0232');
+
+
+// var_dump($login);
+
 // // require_once('header.php');
 
 

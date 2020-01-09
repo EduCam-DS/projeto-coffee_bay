@@ -26,7 +26,7 @@
         // require_once('functions.php');
   ?>
   
-   <header class="container-fluid px-0 mx-0"> 
+   <header class="container-fluid px-0 mx-0 fixed-top"> 
     <nav class="px-0 mx-0 navbar navbar-expand-lg color-nav-bar navbar-dark row justify-content-around pt-0 m-0">
       <a class="navbar-brand col-auto m-0 p-0" href="index.php">
         <img class="header-logo" src="img/logo/Coffee-logo-white.png" alt="logo-cafe bay">
@@ -40,7 +40,7 @@
           data-target="#modal-login">
           <div class="row align-items-center justify-content-around m-0 p-0 col-lg-auto">
             <img class="header-icon col-lg-auto pl-0" src="img/Icons/user.svg">
-            <?php echo isset($logado) ? '<h2 class="header-text col-lg-auto col-10 pl-0 mb-0"> BEM VINDO </h2>' : '<h2 class="header-text col-lg-auto col-10 pl-0 mb-0"> ACESSE OU CRIE SUA CONTA </h2>'; ?>
+            <?php echo '<h2 class="header-text col-lg-auto col-10 pl-0 mb-0">' .$logado .'</h2>'; ?>
           </div>
         </button>
         <div class="col-lg-auto col-12 py-1"></div>

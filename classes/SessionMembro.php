@@ -1,21 +1,26 @@
 <?php
+// require_once('functions.php');
 
 class Session
 {
+    private $nome;
     private $email;
     private $senha;
 
-    public function __construct($xEmail, $xSenha){
+    public function __construct($xNome, $xEmail, $xSenha){
+        $this->nome = $xNome;
         $this->email = $xEmail;
         $this->senha = $xSenha;
 
         $this->sessionLogin();
     }
 
-    public function sessionLogin(){
+    public function sessionLogin()
+    {
 
         global $retorno;
         global $logado;
+        global $login;
 
         $validaEmail = false;
         $validaSenha = false;
@@ -35,21 +40,26 @@ class Session
             }
         }
 
-        if ($validaEmail == true && $validaSenha == true) {
-            $logado = true;
+        if ($validaEmail === true && $validaSenha === true) {
             unset($validaEmail);
             unset($validaSenha);
             unset($jsonMembros);
+            $login = true;
             // echo "logado";
-            // header('location: teste.php');
+            
+
         }else{
+            $login = false;
             $retorno = "Email ou senha inválido! Tente novamente...";
-            unset($retorno);
+            // unset($retorno);
             unset($validaEmail);
             unset($validaSenha);
             unset($jsonMembros);
+            
         }
 
     }
 
 }
+
+?>

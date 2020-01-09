@@ -1,5 +1,5 @@
 <?php 
-require_once('modal-membro.php');
+// require_once('modal-membro.php');
 require_once('functions.php');
 
 ?>
